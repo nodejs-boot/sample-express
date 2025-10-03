@@ -14,8 +14,8 @@ A comprehensive sample Node-Boot application using Express.js framework that dem
 
 1. **Clone and install dependencies:**
    ```bash
-   git clone https://github.com/nodejs-boot/sample-native-http.git
-   cd sample-native-http
+   git clone https://github.com/nodejs-boot/sample-express.git
+   cd sample-express
    pnpm install
    ```
 
@@ -80,7 +80,7 @@ The application uses YAML-based configuration with environment overrides:
 
 ```yaml
 app:
-  name: "native-http-service"
+  name: "sample-express-service"
   platform: "node-boot"
   environment: "development"
   port: 3000
@@ -475,15 +475,15 @@ For detailed database configuration options, visit the [Node-Boot Starter Persis
 3. **Docker deployment:**
     * Build docker image
    ```bash
-   docker build -f Dockerfile -t native-http-sample .
+   docker build -f Dockerfile -t sample-express-service .
    ```
     * Run docker image
    ```bash
-   docker run --rm -it -p 3000:3000 native-http-sample
+   docker run --rm -it -p 3000:3000 sample-express-service
    ```
     * Check container filesystem
    ```bash
-   docker run -t -i native-http-sample /bin/sh
+   docker run -t -i sample-express-service /bin/sh
    ```
 
 ## API Explorer (Swagger UI)
